@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body::before{
+    content: "";
+    background: url('https://cdn1.vectorstock.com/i/1000x1000/13/40/todo-list-seamless-pattern-universal-background-vector-7561340.jpg') center no-repeat;
+    position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+}
+.head{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.navbar{
+    background-color: black;
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 4px;
+    height: 3em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    filter: invert(1);
+    width: 2em;
+    margin: 1em;
+}
+.content{
+    /* background-color: #bbc1bb; */
+    width: 50em;
+    text-align: center;
+    margin: auto;
+    padding:2px;
+}
+.form-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.form-input{
+    width: 11em;
+    margin: 4em;
+    border-radius: 5px;
+    height: 2em;
+    border: 2px solid black;
+    outline: none;
+}
+.form-control{
+    border-radius:7px ;
+    border: 2px solid white;
+    outline: none;
+}
+input[type="text"]{
+    width: 30em;
+    padding: 5px;
+    margin: 1em;
+}
+.btn-add{
+    background-color: rgb(66, 172, 66);
+    border-radius: 7px;
+    border: 2px solid rgb(66, 172, 66);
+    height: 2em;
+    width: 6em;
+    cursor: pointer;
+}
+.btn-delete{
+    background-color: rgb(192, 50, 50);
+    border-radius: 7px;
+    border: 2px solid rgb(192, 50, 50);
+    height: 2em;
+    width: 6em;
+    cursor: pointer;
+}
+.btn-save{
+    background-color: rgb(93, 61, 196);
+    border-radius: 7px;
+    border: 2px solid rgb(93, 61, 196) ;
+    height: 2em;
+    width: 6em;
+    cursor: pointer;
+}
+.btn-edit{
+    background-color: rgb(235, 187, 224);
+    border-radius: 7px;
+    border: 2px solid rgb(235, 187, 224)  ;
+    height: 2em;
+    width: 6em;
+    cursor: pointer;
+}
+.btn-deleteone{
+    background-color: rgb(196, 195, 147);
+    border-radius: 7px;
+    border: 2px solid rgb(196, 195, 147) ;
+    height: 2em;
+    width: 6em;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(53, 47, 53);
+    color: rgb(226, 235, 235);
+    border: 2px solid black;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 2em;
+  }
+  
+  td, th {
+    /* border: 1px solid #dddddd; */
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #bce5f1;
+  }
+  .completed{
+      text-decoration: line-through;
+  }
+  .to-do-output {
+    height: 20em;
+    overflow-y: auto;
+  }
